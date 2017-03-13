@@ -1,0 +1,21 @@
+{
+    "name": "hub20xx/php-local-server",
+    "description": "A class to manage PHP's built-in server",
+    "license": "MIT",
+    "keywords": ["php", "built-in", "server", "class", "local", "linux", "dev"],
+    "authors": [
+        {
+            "name": "hub20xx",
+            "email": "hub20xx@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpLocalServer\\": "src"
+        }
+    }
+}
