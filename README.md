@@ -1,5 +1,7 @@
 # PHP Local Server: A class to manage PHP's built-in server
 
+[![Build Status](https://travis-ci.org/hub20xx/php-local-server.svg)](https://travis-ci.org/hub20xx/php-local-server)
+
 You're on linux and you want a simple way to start and stop a local server.
 
 ## Install
