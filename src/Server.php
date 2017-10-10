@@ -38,7 +38,7 @@ class Server
      */
     public function __construct($docroot, $address = '127.0.0.1', $port = '1111')
     {
-        if (!file_exists($docroot) && !is_dir($docroot)) {
+        if (!is_dir($docroot)) {
             $message = 'Invalid docroot "' . $docroot . '"';
             throw new InvalidArgumentException($message);
         }

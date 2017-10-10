@@ -61,6 +61,18 @@ class ServerTest extends TestCase
         new Server($docroot);
     }
 
+
+    /** @test */
+    public function docroot_must_be_a_folder()
+    {
+        $docroot = __FILE__;
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid docroot "' . $docroot . '"');
+
+        new Server($docroot);
+    }
+
     /** @test */
     public function it_is_set_to_run_on_127_0_0_1_by_default()
     {
